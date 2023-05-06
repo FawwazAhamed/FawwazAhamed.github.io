@@ -1,79 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Your Name - Resume</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-      /* Example styles */
-      section {
-        margin-top: 50px;
-        margin-bottom: 50px;
-      }
-      h2 {
-        font-size: 36px;
-        font-weight: bold;
-      }
-      ul {
-        list-style: none;
-        padding: 0;
-      }
-      li {
-        margin-bottom: 10px;
-      }
-      li h3 {
-        margin-bottom: 5px;
-        font-size: 24px;
-        font-weight: bold;
-      }
-      li p {
-        margin-bottom: 5px;
-        font-size: 16px;
-      }
-      /* Example animations */
-      .fade-in {
-        opacity: 0;
-        animation-name: fadeInAnimation;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-      }
-      @keyframes fadeInAnimation {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      .slide-in-left {
-        transform: translateX(-100%);
-        animation-name: slideInLeftAnimation;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-      }
-      @keyframes slideInLeftAnimation {
-        from {
-          transform: translateX(-100%);
-        }
-        to {
-          transform: translateX(0);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Your Name</a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="welcome-card">
+    <h1>Welcome!</h1>
+    <p>Thank you for visiting my resume website.</p>
+  </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">My Resume</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
+              <a class="nav-link" href="#about-me">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#education">Education</a>
@@ -81,61 +30,92 @@
             <li class="nav-item">
               <a class="nav-link" href="#skills">Skills</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#traits">Traits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#notable-achievements">Notable Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#achievements">Achievements</a>
+            </li>
           </ul>
         </div>
-      </nav>
-    </header>
-    <main class="container">
-      <section id="about" class="fade-in">
-        <h2>About</h2>
-        <p>Your introduction here</p>
-      </section>
-      <section id="experience" class="slide-in-left">
-        <h2>Experience</h2>
-        <ul>
-          <li>
-            <h3>Job Title</h3>
-            <p>Company Name</p>
-            <p>Employment Date</p>
-            <ul>
-              <li>Responsibility 1</li>
-              <li>Responsibility 2</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <section id="education" class="fade-in">
+      </div>
+    </nav>
+  </header>
+  <section id="about-me" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <h4>Get to know me better</h4>
+      </div>
+      <div class="section-content">
+        <p>PLACE HOLDER TEXT</p>
+      </div>
+    </div>
+  </section>
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
         <h2>Education</h2>
-        <ul>
-            <li>
-            <h3>Degree</h3>
-            <p>School Name</p>
-            <p>Graduation Date</p>
-            <ul>
-                <li>Relevant Coursework 1</li>
-                <li>Relevant Coursework 2</li>
-            </ul>
-            </li>
-        </ul>
-        </section>
-        <section id="skills" class="slide-in-left">
+        <h4>My academic background</h4>
+      </div>
+      <div class="section-content">
+        <p>PLACE HOLDER TEXT</p>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
         <h2>Skills</h2>
-        <ul>
-          <li>
-            <h3>Skill 1</h3>
-            <p>Description of skill 1</p>
-          </li>
-          <li>
-            <h3>Skill 2</h3>
-            <p>Description of skill 2</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
-</html>
-
-
+        <h4>What I can do</h4>
+      </div>
+      <div class="section-content">
+        <p>PLACE HOLDER TEXT</p>
+      </div>
+    </div>
+  </section>
+  <section id="traits" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Traits</h2>
+        <h4>My personal qualities</h4>
+      </div>
+      <div class="section-content">
+        <p>PLACE HOLDER TEXT</p>
+      </div>
+    </div>
+</section>
+<section id="notable-achievements" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Notable Achievements</h2>
+      <h4>My accomplishments</h4>
+    </div>
+    <div class="section-content">
+      <p>PLACE HOLDER TEXT</p>
+    </div>
+  </div>
+</section>
+<section id="achievements" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Achievements</h2>
+      <h4>What I've done</h4>
+    </div>
+    <div class="section-content">
+      <p>PLACE HOLDER TEXT</p>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <p>Copyright &copy; 2023 My Resume</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>    
