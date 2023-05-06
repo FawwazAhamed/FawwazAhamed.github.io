@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Name - Resume</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      /* Example styles */
+      section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      h2 {
+        font-size: 36px;
+        font-weight: bold;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      li h3 {
+        margin-bottom: 5px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      li p {
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+      /* Example animations */
+      .fade-in {
+        opacity: 0;
+        animation-name: fadeInAnimation;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes fadeInAnimation {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .slide-in-left {
+        transform: translateX(-100%);
+        animation-name: slideInLeftAnimation;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes slideInLeftAnimation {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Your Name</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section id="about" class="fade-in">
+        <h2>About</h2>
+        <p>Your introduction here</p>
+      </section>
+      <section id="experience" class="slide-in-left">
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            <h3>Job Title</h3>
+            <p>Company Name</p>
+            <p>Employment Date</p>
+            <ul>
+              <li>Responsibility 1</li>
+              <li>Responsibility 2</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section id="education" class="fade-in">
+        <h2>Education</h2>
+        <ul>
+            <li>
+            <h3>Degree</h3>
+            <p>School Name</p>
+            <p>Graduation Date</p>
+            <ul>
+                <li>Relevant Coursework 1</li>
+                <li>Relevant Coursework 2</li>
+            </ul>
+            </li>
+        </ul>
+        </section>
+        <section id="skills" class="slide-in-left">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            <h3>Skill 1</h3>
+            <p>Description of skill 1</p>
+          </li>
+          <li>
+            <h3>Skill 2</h3>
+            <p>Description of skill 2</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
