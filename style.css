@@ -21,6 +21,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+/* Add a slide-out class to move the welcome card out of the screen */
+#welcome-card.slide-out {
+    transform: translateX(-100%);
+}
 
 #welcome-card h1 {
     font-size: 48px;
