@@ -5,7 +5,170 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My Resume</title>
-  <link rel="stylesheet" href="style.css">
+  <style>section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  li h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  li p {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  /* Example animations */
+  .fade-in {
+    opacity: 0;
+    animation-name: fadeInAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .slide-in-left {
+    transform: translateX(-100%);
+    animation-name: slideInLeftAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slideInLeftAnimation {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  /* Additional styles */
+  .welcome-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: slideOutAnimation;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slideOutAnimation {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  header {
+    background-color: #f44336;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    animation-name: slideInAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slideInAnimation {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  header .navbar-brand {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  header .navbar-nav .nav-item .nav-link {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  section {
+    padding: 50px 0;
+  }
+  .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .section-header h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .section-header h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f44336;
+  }
+  .section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .experience-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+  .experience-item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .experience-item h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f44336;
+    margin-bottom: 5px;
+  }
+  .experience-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 768px) {
+    header .navbar-brand {
+    font-size: 24px;
+    }
+    header .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    }
+    .section-header h2 {
+    font-size: 36px;
+    }
+    .section-header h4 {
+    font-size: 20px;
+    }
+    .experience-item {
+    width: 100%;
+    }
+}  </style>
 </head>
 <body>
   <div class="welcome-card">
