@@ -5,7 +5,7 @@ var welcomeCard = document.getElementById("welcome-card");
 setTimeout(function() {
     // Add a class name to the welcome card element
     welcomeCard.classList.add("slide-out");
-}, 2000);
+}, 1000);
 
 // Get the navbar element
 var navbar = document.getElementById("navbar");
